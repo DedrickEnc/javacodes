@@ -5,24 +5,12 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:p="http://primefaces.org/ui"
       xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
     <h:head>
+        <title>Essaie</title>
+    </h:head>  
 
-    </h:head>
-    <h:body>
-        <h:form>  
-
-            <h:panelGrid columns="4" cellpadding="5">  
-                <h:outputLabel for="name" value="Name:" style="font-weight:bold"/>  
-
-                <p:inputText id="name" value="#{pprBean.firstname}" />  
-
-                <p:commandButton value="Submit" action="#{pprBean.redirect()}"/>  
-
-                <h:outputText value="#{pprBean.firstname}" id="display" />  
-            </h:panelGrid>  
-
-        </h:form>  
-        
+    <h:body> 
         <h:form>
             <p:inputText value="#{bean.value}" pt:placeholder="Watermark here"/>  
             <p:editor/>
@@ -42,7 +30,6 @@
             <h:outputText id="out" value="#{bean.text}" >
             </h:outputText>
         </h:form>
-
-    </h:body>
+    </h:body> 
 </html>
 
